@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Control de gastos e ingresos",
+        "description": "Aplicación web para la gestión de finanzas personales, desarrollada en React, con integración a Firebase Firestore y visualización de datos mediante gráficos.",
+        "link": "https://github.com/Nikotastic/Control-de-Gastos-e-Ingresos.git"
+    },
+    {
+        "title": "PetCare Center SPA",
+        "description": "PA (Single Page Application) developed with Vanilla JavaScript and Vite, with a mock backend using json-server. It manages users, roles, pets, and stays for an animal care center, with client and worker roles.",
+        "link": "https://github.com/Nikotastic/SPA-PetCare.git"
+    }
+]
