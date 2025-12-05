@@ -6,7 +6,7 @@
     },
     {
         "title": "PetCare Center SPA",
-        "description": "PA (Single Page Application) developed with Vanilla JavaScript and Vite, with a mock backend using json-server. It manages users, roles, pets, and stays for an animal care center, with client and worker roles.",
+        "description": "SPA (Single Page Application) developed with Vanilla JavaScript and Vite, with a mock backend using json-server. It manages users, roles, pets, and stays for an animal care center, with client and worker roles.",
         "link": "https://github.com/Nikotastic/SPA-PetCare.git"
     }
 ]
