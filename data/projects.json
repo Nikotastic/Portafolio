@@ -1,6 +1,31 @@
 [
   {
     "title": {
+      "es": "Firmness",
+      "en": "Firmness"
+    },
+    "description": {
+      "es": "Ecosistema digital para la industria de la construcción que optimiza el ciclo de renta y venta de maquinaria pesada. Mediante el uso de .NET 8, Angular e Inteligencia Artificial, Firmeza ofrece una solución 360° que abarca desde un portal de clientes intuitivo hasta un centro de comando administrativo. Un proyecto que combina arquitectura moderna y servicios en la nube para ofrecer una experiencia empresarial segura, rápida y escalable",
+      "en": "A digital ecosystem for the construction industry that optimizes the rental and sales cycle of heavy machinery. Using .NET 8, Angular, and Artificial Intelligence, Firmeza offers a 360° solution that encompasses everything from an intuitive customer portal to an administrative command center. This project combines modern architecture and cloud services to deliver a secure, fast, and scalable business experience."
+    },
+    "link": "https://github.com/Nikotastic/ConstrurentApp.NET.git",
+    "demo admin": "https://construrent-admin.azurewebsites.net",
+    "demo client": "https://blue-mushroom-001c6091e.4.azurestaticapps.net"
+  },
+  {
+    "title": {
+      "es": "SkyBolt",
+      "en": "SkyBolt"
+    },
+    "description": {
+      "es": "SkyBolt es una aplicación móvil interactiva diseñada para agilizar la reserva de instalaciones deportivas como campos de fútbol, ​​canchas de baloncesto y canchas de voleibol. Optimiza la utilización de los espacios deportivos y reduce los tiempos de espera mediante un sistema inteligente por turnos y pagos en línea.",
+      "en": "SkyBolt is an interactive mobile-focused application designed to streamline the booking of sports venues such as football fields, basketball courts, and volleyball courts. It enhances the utilization of sports spaces and reduces wait times through a smart turn-based system and online payments."
+    },
+    "link": "https://github.com/Conusion103/Skybolt.git",
+    "demo": "https://skybolt.vercel.app" 
+  },
+  {
+    "title": {
       "es": "Control de gastos e ingresos",
       "en": "Expense and Income Tracker"
     },
