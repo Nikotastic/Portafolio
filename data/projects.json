@@ -1,12 +1,25 @@
 [
-    {
-        "title": "Control de gastos e ingresos",
-        "description": "Aplicación web para la gestión de finanzas personales, desarrollada en React, con integración a Firebase Firestore y visualización de datos mediante gráficos.",
-        "link": "https://github.com/Nikotastic/Control-de-Gastos-e-Ingresos.git"
+  {
+    "title": {
+      "es": "Control de gastos e ingresos",
+      "en": "Expense and Income Tracker"
     },
-    {
-        "title": "PetCare Center SPA",
-        "description": "SPA (Single Page Application) developed with Vanilla JavaScript and Vite, with a mock backend using json-server. It manages users, roles, pets, and stays for an animal care center, with client and worker roles.",
-        "link": "https://github.com/Nikotastic/SPA-PetCare.git"
-    }
+    "description": {
+      "es": "Aplicación web para la gestión de finanzas personales, desarrollada en React, con integración a Firebase Firestore y visualización de datos mediante gráficos.",
+      "en": "Web application for personal finance management, developed in React, with Firebase Firestore integration and data visualization through charts."
+    },
+    "link": "https://github.com/Nikotastic/Control-de-Gastos-e-Ingresos.git",
+    "demo": "https://control-financiero-nine.vercel.app"
+  },
+  {
+    "title": {
+      "es": "PetCare Center SPA",
+      "en": "PetCare Center SPA"
+    },
+    "description": {
+      "es": "SPA (Single Page Application) desarrollada con Vanilla JavaScript y Vite, con backend simulado usando json-server. Gestiona usuarios, roles, mascotas y estancias para un centro de cuidado animal, con roles de cliente y trabajador.",
+      "en": "SPA (Single Page Application) developed with Vanilla JavaScript and Vite, with a mock backend using json-server. It manages users, roles, pets, and stays for an animal care center, with client and worker roles."
+    },
+    "link": "https://github.com/Nikotastic/SPA-PetCare.git"
+  }
 ]
