@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Nikotastic | Portafolio Profesional
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+Bienvenido a mi portafolio personal, una plataforma interactiva diseñada para mostrar mis proyectos más destacados, habilidades técnicas y experiencia en el desarrollo de software.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Características Principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Diseño Premium**: Una estética moderna y minimalista utilizando **Glassmorphism** y animaciones fluidas.
+- **Internacionalización (i18n)**: Soporte completo para **Español** e **Inglés**.
+- **Performance de Vanguardia**: Construido con **Next.js 16** y **React 19** para una velocidad de carga y SEO óptimos.
+- **Interactivo**: Fondo animado con gradientes dinámicos y efectos de partículas de luz.
+- **Totalmente Responsivo**: Adaptado para ofrecer la mejor experiencia en cualquier dispositivo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Core**: Next.js 16 (App Router), React 19, TypeScript.
+- **Estilos**: Tailwind CSS 4, CSS Animations.
+- **Tipografía**: Geist Sans & Mono (optimizado por Google Fonts).
+- **Despliegue**: Vercel.
 
-## Learn More
+## 📁 Proyectos Destacados
 
-To learn more about Next.js, take a look at the following resources:
+El portafolio incluye una sección de proyectos cargada dinámicamente desde un archivo `JSON`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Firmness**: Ecosistema para la industria de la construcción (.NET 8 + Angular + AI).
+2.  **SkyBolt**: Aplicación móvil para reserva de instalaciones deportivas.
+3.  **Expense Tracker**: Gestión de finanzas personales con Firebase e integración de gráficos.
+4.  **PetCare Center SPA**: SPA desarrollada con Vanilla JavaScript para gestión de centros animales.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Instalación y Ejecución
 
-## Deploy on Vercel
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clona el repositorio**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    git clone https://github.com/Nikotastic/Portafolio.git
+    cd Portafolio
+    ```
+
+2.  **Instala las dependencias**:
+
+    ```bash
+    npm install
+    ```
+
+3.  **Inicia el servidor de desarrollo**:
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Abre en tu navegador**:
+    Visita [http://localhost:3000](http://localhost:3000)
+
+## 📦 Scripts Disponibles
+
+- `npm run dev`: Inicia el entorno de desarrollo.
+- `npm run build`: Crea la versión optimizada para producción.
+- `npm run start`: Inicia la aplicación en modo producción.
+- `npm run lint`: Ejecuta el análisis de código con ESLint.
+
+
+---
+<div className="center">
+Desarrollado con ❤️ por Nikol Velasquez <a href="https://github.com/Nikotastic">(https://github.com/Nikotastic)</a>
+</div>
