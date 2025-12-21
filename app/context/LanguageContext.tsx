@@ -36,6 +36,8 @@ const translations = {
     "footer.title": "Conectemos",
     "footer.subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
     "footer.rights": "Todos los derechos reservados.",
+    "hero.cv": "Descargar CV",
+    "hero.qr": "Ver QR",
   },
   en: {
     // Navbar
@@ -62,6 +64,8 @@ const translations = {
     "footer.title": "Let's Connect",
     "footer.subtitle": "Have a project in mind? Let's talk!",
     "footer.rights": "All rights reserved.",
+    "hero.cv": "Download CV",
+    "hero.qr": "View QR",
   },
 };
 

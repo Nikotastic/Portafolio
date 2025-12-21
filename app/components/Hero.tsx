@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "../context/LanguageContext";
+import CVActions from "./CVActions";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -27,6 +28,7 @@ export default function Hero() {
           </span>{" "}
           {t("hero.description.end")}
         </p>
+        <CVActions />
       </div>
     </section>
   );
