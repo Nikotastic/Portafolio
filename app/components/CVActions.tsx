@@ -9,7 +9,6 @@ export default function CVActions() {
   const [baseUrl, setBaseUrl] = useState("");
 
   useEffect(() => {
-    // Captura el origen actual (ej: http://localhost:3000 o https://tu-sitio.com)
     setBaseUrl(window.location.origin);
   }, []);
 
@@ -18,7 +17,6 @@ export default function CVActions() {
       ? "/CV_Nikol_Velasquez_ES.pdf"
       : "/CV_Nikol_Velasquez_EN.pdf";
 
-  // URL dinámica: funciona en local y en producción automáticamente
   const cvUrl = `${baseUrl}${cvPath}`;
   const qrUrl = baseUrl
     ? `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(
@@ -28,7 +26,6 @@ export default function CVActions() {
 
   return (
     <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 animate-slide-up-delay-3">
-      {/* Botón Principal de Descarga */}
       <a
         href={cvPath}
         download
@@ -56,7 +53,6 @@ export default function CVActions() {
         <span className="relative z-10">{t("hero.cv")}</span>
       </a>
 
-      {/* Botón de QR */}
       <div className="relative">
         <button
           onClick={() => setShowQR(!showQR)}
@@ -90,7 +86,6 @@ export default function CVActions() {
           <span className="sm:hidden">{t("hero.qr")}</span>
         </button>
 
-        {/* Popover de QR */}
         {showQR && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-4 bg-slate-900/90 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl animate-fade-in z-50">
             <div className="w-32 h-32 bg-white p-2 flex items-center justify-center rounded-lg overflow-hidden relative">

@@ -38,7 +38,6 @@ export default function DynamicBackground() {
 
   return (
     <div className="fixed inset-0 -z-50 overflow-hidden bg-slate-950">
-      {/* 1. Capa de Mesh Gradient - Atmosfera Base (Más intensa) */}
       <motion.div
         style={{ y: backgroundY }}
         className="absolute inset-0 opacity-50"
@@ -48,7 +47,6 @@ export default function DynamicBackground() {
         <div className="absolute top-[20%] left-[20%] w-[45%] h-[45%] rounded-full bg-purple-500/20 blur-[110px] animate-float-delay"></div>
       </motion.div>
 
-      {/* 2. Grid de Ingeniería / Blueprint (Brillo Neon) */}
       <div
         className="absolute inset-0 opacity-[0.25]"
         style={{
@@ -70,14 +68,12 @@ export default function DynamicBackground() {
         }}
       ></div>
 
-      {/* 3. Escaneo Horizontal de "Red" (Más sutil) */}
       <motion.div
         animate={{ y: ["0vh", "100vh"] }}
         transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
         className="absolute left-0 right-0 h-[1px] bg-white/20 shadow-[0_0_10px_rgba(255,255,255,0.3)] z-10 pointer-events-none"
       />
 
-      {/* 4. Fragmentos de Código Flotantes (Con brilo/Neon) */}
       {mounted && (
         <div className="absolute inset-0 pointer-events-none">
           {[...Array(15)].map((_, i) => (
@@ -107,7 +103,6 @@ export default function DynamicBackground() {
         </div>
       )}
 
-      {/* 5. Spotlight Interactivo (Más potente) */}
       <motion.div
         className="absolute inset-0 pointer-events-none z-20"
         style={{
@@ -119,7 +114,6 @@ export default function DynamicBackground() {
         }}
       />
 
-      {/* 6. Líneas de Circuito Sutiles */}
       <svg className="absolute inset-0 w-full h-full opacity-[0.05] pointer-events-none">
         <pattern
           id="circuit"
@@ -138,7 +132,6 @@ export default function DynamicBackground() {
         <rect width="100%" height="100%" fill="url(#circuit)" />
       </svg>
 
-      {/* 7. Capa de Textura (Noise) */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <filter id="noiseFilter">

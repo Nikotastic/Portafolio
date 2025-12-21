@@ -1,74 +1,96 @@
-# 🚀 Nikotastic | Portafolio Profesional
+# <p align="center">🚀 Nikol Velasquez | Portafolio </p>
 
-[![Sitio Web](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://nikotastic-portafolio.vercel.app)
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-Bienvenido a mi portafolio personal, una plataforma interactiva diseñada para mostrar mis proyectos más destacados, habilidades técnicas y experiencia en el desarrollo de software.
-
-## 🌟 Características Principales
-
-- **Diseño Premium**: Una estética moderna y minimalista utilizando **Glassmorphism** y animaciones fluidas.
-- **Internacionalización (i18n)**: Soporte completo para **Español** e **Inglés**.
-- **Performance de Vanguardia**: Construido con **Next.js 16** y **React 19** para una velocidad de carga y SEO óptimos.
-- **Interactivo**: Fondo animado con gradientes dinámicos y efectos de partículas de luz.
-- **Totalmente Responsivo**: Adaptado para ofrecer la mejor experiencia en cualquier dispositivo.
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Core**: Next.js 16 (App Router), React 19, TypeScript.
-- **Estilos**: Tailwind CSS 4, CSS Animations.
-- **Tipografía**: Geist Sans & Mono (optimizado por Google Fonts).
-- **Despliegue**: Vercel.
-
-## 📁 Proyectos Destacados
-
-El portafolio incluye una sección de proyectos cargada dinámicamente desde un archivo `JSON`:
-
-1.  **Firmness**: Ecosistema para la industria de la construcción (.NET 8 + Angular + AI).
-2.  **SkyBolt**: Aplicación móvil para reserva de instalaciones deportivas.
-3.  **Expense Tracker**: Gestión de finanzas personales con Firebase e integración de gráficos.
-4.  **PetCare Center SPA**: SPA desarrollada con Vanilla JavaScript para gestión de centros animales.
-
-## 🚀 Instalación y Ejecución
-
-Para ejecutar este proyecto localmente, sigue estos pasos:
-
-1.  **Clona el repositorio**:
-
-    ```bash
-    git clone https://github.com/Nikotastic/Portafolio.git
-    cd Portafolio
-    ```
-
-2.  **Instala las dependencias**:
-
-    ```bash
-    npm install
-    ```
-
-3.  **Inicia el servidor de desarrollo**:
-
-    ```bash
-    npm run dev
-    ```
-
-4.  **Abre en tu navegador**:
-    Visita [http://localhost:3000](http://localhost:3000)
-
-## 📦 Scripts Disponibles
-
-- `npm run dev`: Inicia el entorno de desarrollo.
-- `npm run build`: Crea la versión optimizada para producción.
-- `npm run start`: Inicia la aplicación en modo producción.
-- `npm run lint`: Ejecuta el análisis de código con ESLint.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Activo-34D399?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Version-2.0.0-0EA5E9?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-FFD700?style=for-the-badge" alt="Maintained" />
+</p>
 
 ---
 
-<div className="center">
-Desarrollado con ❤️ por Nikol Velasquez <a href="https://github.com/Nikotastic">(https://github.com/Nikotastic)</a>
-</div>
+## 📸 Preview & Demo
+
+<p align="center">
+  <a href="https://nikotastic-portafolio.vercel.app">
+    <img src="https://img.shields.io/badge/VER_DEMO_EN_VIVO-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
+---
+
+## 🛠️ Stack Tecnológico
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=magenta" />
+</p>
+
+---
+
+## 🌌 Características
+
+### 🎨 Experiencia Visual "Cyber-Tech"
+
+- **Fondo Dinámico Interactivo**: Capas de Mesh Gradient, escaneo láser, circuitos y fragmentos de código animados con `Framer Motion`.
+- **Efecto de Profundidad**: Sistema de Parallax y partículas en tiempo real que reaccionan al scroll del usuario.
+- **Spotlight Inteligente**: Una luz digital que sigue el cursor, iluminando una cuadrícula técnica oculta.
+
+### 🌎 Internacionalización & Accesibilidad
+
+- **Dual Language**: Soporte completo para **Español 🇪🇸** e **Inglés 🇺🇸** con cambio fluido de estado.
+- **CV Dinámico**: Sistema de descarga de hoja de vida (PDF) que se adapta al idioma seleccionado.
+- **QR Code Generator**: Generación automática de códigos QR para acceder al CV desde dispositivos móviles de forma instantánea.
+
+### ⚙️ Arquitectura de Software
+
+- **Archivos de Datos (JSON)**: Proyectos y contenidos gestionados externamente para facilitar actualizaciones sin modificar el código core.
+- **UI/UX Premium**: Glassmorphism avanzado, micro-interacciones suaves y tipografía optimizada (Geist Serif/Mono).
+
+---
+
+## 📂 Proyectos Destacados
+
+| Proyecto            | Tecnologías           | Descripción                                       |
+| :------------------ | :-------------------- | :------------------------------------------------ |
+| **Firmness**        | `.NET 8, Angular, AI` | Ecosistema integral para gestión de construcción. |
+| **SkyBolt**         | `Mobile App`          | Innovadora App para reservas deportivas.          |
+| **Expense Tracker** | `Firebase, React`     | Dashboard financiero con gráficos dinámicos.      |
+| **PetCare Center**  | `Vanilla JS, CSS`     | Sistema de gestión de centros veterinarios.       |
+
+---
+
+## 🚀 Instalación Local
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/Nikotastic/Portafolio.git
+
+# 2. Entrar a la carpeta
+cd Portafolio
+
+# 3. Instalar dependencias
+npm install
+
+# 4. Iniciar modo desarrollo
+npm run dev
+```
+
+---
+
+## 📬 Contacto
+
+<p align="center">
+  <a href="https://github.com/Nikotastic">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="mailto:tu-correo@email.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  Desarrollado con ❤️ y mucho código por <strong>Nikol Velasquez</strong>
+</p>
