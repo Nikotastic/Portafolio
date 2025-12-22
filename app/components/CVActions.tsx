@@ -2,6 +2,8 @@
 
 import { useLanguage } from "../context/LanguageContext";
 import { useState, useEffect } from "react";
+import { Download, QrCode } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function CVActions() {
   const { language, t } = useLanguage();
@@ -25,88 +27,60 @@ export default function CVActions() {
     : "";
 
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 animate-slide-up-delay-3">
-      <a
+    <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
+      <motion.a
+        whileTap={{ scale: 0.95 }}
         href={cvPath}
         download
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative flex items-center gap-3 px-8 py-4 bg-slate-100 text-slate-900 font-bold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95"
+        className="w-full sm:w-auto group relative flex items-center justify-center gap-3 px-6 md:px-8 py-3.5 bg-white text-slate-900 font-bold rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-200 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="relative z-10"
-        >
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4" />
-          <polyline points="7 10 12 15 17 10" />
-          <line x1="12" x2="12" y1="15" y2="3" />
-        </svg>
+        <span className="absolute inset-0 bg-gradient-to-r from-slate-200 to-white opacity-0 group-hover:opacity-100 transition-opacity"></span>
+        <Download className="w-5 h-5 relative z-10" />
         <span className="relative z-10">{t("hero.cv")}</span>
-      </a>
+      </motion.a>
 
-      <div className="relative">
-        <button
+      <div className="relative w-full sm:w-auto">
+        <motion.button
+          whileTap={{ scale: 0.95 }}
           onClick={() => setShowQR(!showQR)}
-          className="flex items-center gap-3 px-6 py-4 bg-slate-800/50 border border-slate-700 text-slate-300 font-semibold rounded-full hover:bg-slate-800 hover:text-white hover:border-slate-500 transition-all duration-300"
+          className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 text-slate-300 font-semibold rounded-xl hover:bg-slate-800/60 hover:text-white hover:border-slate-500 transition-all duration-300"
           title={t("hero.qr")}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <rect width="5" height="5" x="3" y="3" rx="1" />
-            <rect width="5" height="5" x="16" y="3" rx="1" />
-            <rect width="5" height="5" x="3" y="16" rx="1" />
-            <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
-            <path d="M21 21v.01" />
-            <path d="M12 7v3a2 2 0 0 1-2 2H7" />
-            <path d="M3 12h.01" />
-            <path d="M12 3h.01" />
-            <path d="M12 16v.01" />
-            <path d="M16 12h1" />
-            <path d="M21 12v.01" />
-            <path d="M12 21v-1" />
-          </svg>
-          <span className="sm:hidden">{t("hero.qr")}</span>
-        </button>
+          <QrCode className="w-5 h-5" />
+          <span>{t("hero.qr")}</span>
+        </motion.button>
 
-        {showQR && (
-          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-4 bg-slate-900/90 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl animate-fade-in z-50">
-            <div className="w-32 h-32 bg-white p-2 flex items-center justify-center rounded-lg overflow-hidden relative">
-              {qrUrl ? (
-                <img
-                  src={qrUrl}
-                  alt="QR Code CV"
-                  className="w-full h-full object-contain animate-fade-in"
-                />
-              ) : (
-                <div className="w-8 h-8 border-2 border-slate-200 border-t-slate-800 rounded-full animate-spin"></div>
-              )}
-            </div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 rotate-45 w-4 h-4 bg-slate-900/90 border-r border-b border-slate-700/50"></div>
-            <p className="text-[10px] text-slate-400 mt-2 text-center font-medium">
-              {baseUrl.includes("localhost")
-                ? "Scan (use Local IP)"
-                : "Scan to view CV"}
-            </p>
-          </div>
-        )}
+        <AnimatePresence>
+          {showQR && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-4 bg-slate-900 border border-white/10 rounded-2xl shadow-2xl z-50 min-w-[180px]"
+            >
+              <div className="w-32 h-32 bg-white p-2 flex items-center justify-center mx-auto rounded-lg overflow-hidden relative">
+                {qrUrl ? (
+                  <img
+                    src={qrUrl}
+                    alt="QR Code CV"
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <div className="w-8 h-8 border-2 border-slate-200 border-t-slate-800 rounded-full animate-spin"></div>
+                )}
+              </div>
+              <p className="text-[10px] text-slate-400 mt-3 text-center font-medium leading-tight">
+                {baseUrl.includes("localhost")
+                  ? "Scan (use Local IP)"
+                  : "Scan to view CV"}
+              </p>
+              {/* Arrow */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-3 h-3 bg-slate-900 border-r border-b border-white/10 rotate-45"></div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );

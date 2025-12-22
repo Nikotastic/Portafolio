@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion";
 
 export default function TechCarousel() {
   const { t } = useLanguage();
@@ -89,32 +90,40 @@ export default function TechCarousel() {
   ];
 
   return (
-    <section className="py-16 px-6 overflow-hidden">
-      <div className="max-w-3xl mx-auto mb-8">
-        <h2 className="text-3xl font-bold text-gray-100 text-center animate-slide-up">
+    <section className="py-16 md:py-24 px-6 overflow-hidden">
+      <div className="max-w-4xl mx-auto mb-12">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-bold text-gray-100 text-center tracking-tight"
+        >
           {t("tech.title")}
-        </h2>
+        </motion.h2>
       </div>
 
       <div className="relative w-full">
         {/* Gradientes para efecto fade en los bordes */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-slate-900 via-slate-900/80 to-transparent z-10 pointer-events-none"></div>
 
-        {/* Carrusel infinito con ancho fijo */}
-        <div className="overflow-hidden">
+        {/* Carrusel infinito */}
+        <div className="overflow-hidden py-4">
           <div className="flex animate-carousel w-fit">
             {/* Primer conjunto de logos */}
             {technologies.map((tech, index) => (
-              <div key={`first-${index}`} className="flex-shrink-0 mx-8 group">
-                <div className="w-20 h-20 flex items-center justify-center bg-slate-800/50 rounded-lg border border-slate-700 hover:border-slate-500 hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-slate-700/50">
+              <div
+                key={`first-${index}`}
+                className="flex-shrink-0 mx-4 md:mx-10 group"
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-white/20 transition-all duration-300 group-hover:bg-slate-800/50 group-hover:scale-110">
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all"
+                    className="w-10 h-10 md:w-14 md:h-14 object-contain transition-all duration-500 opacity-90 group-hover:opacity-100"
                   />
                 </div>
-                <p className="text-center text-sm text-gray-400 mt-2 group-hover:text-gray-200 transition-colors">
+                <p className="text-center text-[10px] md:text-sm font-medium text-slate-500 mt-3 group-hover:text-slate-300 transition-colors">
                   {tech.name}
                 </p>
               </div>
@@ -122,15 +131,18 @@ export default function TechCarousel() {
 
             {/* Segundo conjunto (duplicado para el loop infinito) */}
             {technologies.map((tech, index) => (
-              <div key={`second-${index}`} className="flex-shrink-0 mx-8 group">
-                <div className="w-20 h-20 flex items-center justify-center bg-slate-800/50 rounded-lg border border-slate-700 hover:border-slate-500 hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-slate-700/50">
+              <div
+                key={`second-${index}`}
+                className="flex-shrink-0 mx-4 md:mx-10 group"
+              >
+                <div className="w-16 h-16 md:w-24 md:h-24 flex items-center justify-center bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-white/5 hover:border-white/20 transition-all duration-300 group-hover:bg-slate-800/50 group-hover:scale-110">
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-12 h-12 object-contain filter brightness-90 group-hover:brightness-110 transition-all"
+                    className="w-10 h-10 md:w-14 md:h-14 object-contain transition-all duration-500 opacity-90 group-hover:opacity-100"
                   />
                 </div>
-                <p className="text-center text-sm text-gray-400 mt-2 group-hover:text-gray-200 transition-colors">
+                <p className="text-center text-[10px] md:text-sm font-medium text-slate-500 mt-3 group-hover:text-slate-300 transition-colors">
                   {tech.name}
                 </p>
               </div>

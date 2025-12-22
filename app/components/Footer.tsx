@@ -61,7 +61,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="px-6 py-20 max-w-3xl mx-auto">
+    <footer id="contacto" className="px-6 py-20 max-w-3xl mx-auto">
       <div className="text-center space-y-6 animate-slide-up">
         <h2 className="text-3xl font-bold text-gray-100">
           {t("footer.title")}
